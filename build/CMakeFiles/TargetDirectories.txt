@@ -1,0 +1,8 @@
+/home/lukams/CodingProjects/Traffic/build/CMakeFiles/edit_cache.dir
+/home/lukams/CodingProjects/Traffic/build/CMakeFiles/rebuild_cache.dir
+/home/lukams/CodingProjects/Traffic/build/TrafficApp/CMakeFiles/TrafficApp.dir
+/home/lukams/CodingProjects/Traffic/build/TrafficApp/CMakeFiles/edit_cache.dir
+/home/lukams/CodingProjects/Traffic/build/TrafficApp/CMakeFiles/rebuild_cache.dir
+/home/lukams/CodingProjects/Traffic/build/TrafficLib/CMakeFiles/TrafficLib.dir
+/home/lukams/CodingProjects/Traffic/build/TrafficLib/CMakeFiles/edit_cache.dir
+/home/lukams/CodingProjects/Traffic/build/TrafficLib/CMakeFiles/rebuild_cache.dir
