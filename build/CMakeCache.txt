@@ -224,6 +224,9 @@ TrafficSimProject_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 TrafficSimProject_SOURCE_DIR:STATIC=/home/lukams/CodingProjects/Traffic
 
+//The directory containing a CMake configuration file for jsoncpp.
+jsoncpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/jsoncpp
+
 
 ########################
 # INTERNAL cache entries

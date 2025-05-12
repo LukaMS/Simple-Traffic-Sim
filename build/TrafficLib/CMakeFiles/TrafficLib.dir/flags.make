@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lukams/CodingProjects/Traffic/TrafficLib/include -I/home/lukams/CodingProjects/Traffic/TrafficLib/../third_party/websocketpp
+CXX_INCLUDES = -I/home/lukams/CodingProjects/Traffic/TrafficLib/include -I/home/lukams/CodingProjects/Traffic/TrafficLib/../third_party/websocketpp -isystem /usr/include/jsoncpp
 
 CXX_FLAGS = 
 

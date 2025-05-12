@@ -93,6 +93,7 @@ TrafficApp_EXTERNAL_OBJECTS =
 TrafficApp/TrafficApp: TrafficApp/CMakeFiles/TrafficApp.dir/main.cpp.o
 TrafficApp/TrafficApp: TrafficApp/CMakeFiles/TrafficApp.dir/build.make
 TrafficApp/TrafficApp: TrafficLib/libTrafficLib.a
+TrafficApp/TrafficApp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so.1.9.5
 TrafficApp/TrafficApp: TrafficApp/CMakeFiles/TrafficApp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lukams/CodingProjects/Traffic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TrafficApp"
 	cd /home/lukams/CodingProjects/Traffic/build/TrafficApp && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TrafficApp.dir/link.txt --verbose=$(VERBOSE)
