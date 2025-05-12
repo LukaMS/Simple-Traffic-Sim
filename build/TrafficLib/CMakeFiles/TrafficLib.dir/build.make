@@ -125,12 +125,27 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrafficLib.dir/src/Map.cpp.s"
 	cd /home/lukams/CodingProjects/Traffic/build/TrafficLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukams/CodingProjects/Traffic/TrafficLib/src/Map.cpp -o CMakeFiles/TrafficLib.dir/src/Map.cpp.s
 
+TrafficLib/CMakeFiles/TrafficLib.dir/src/Light.cpp.o: TrafficLib/CMakeFiles/TrafficLib.dir/flags.make
+TrafficLib/CMakeFiles/TrafficLib.dir/src/Light.cpp.o: /home/lukams/CodingProjects/Traffic/TrafficLib/src/Light.cpp
+TrafficLib/CMakeFiles/TrafficLib.dir/src/Light.cpp.o: TrafficLib/CMakeFiles/TrafficLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lukams/CodingProjects/Traffic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object TrafficLib/CMakeFiles/TrafficLib.dir/src/Light.cpp.o"
+	cd /home/lukams/CodingProjects/Traffic/build/TrafficLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT TrafficLib/CMakeFiles/TrafficLib.dir/src/Light.cpp.o -MF CMakeFiles/TrafficLib.dir/src/Light.cpp.o.d -o CMakeFiles/TrafficLib.dir/src/Light.cpp.o -c /home/lukams/CodingProjects/Traffic/TrafficLib/src/Light.cpp
+
+TrafficLib/CMakeFiles/TrafficLib.dir/src/Light.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrafficLib.dir/src/Light.cpp.i"
+	cd /home/lukams/CodingProjects/Traffic/build/TrafficLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukams/CodingProjects/Traffic/TrafficLib/src/Light.cpp > CMakeFiles/TrafficLib.dir/src/Light.cpp.i
+
+TrafficLib/CMakeFiles/TrafficLib.dir/src/Light.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrafficLib.dir/src/Light.cpp.s"
+	cd /home/lukams/CodingProjects/Traffic/build/TrafficLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukams/CodingProjects/Traffic/TrafficLib/src/Light.cpp -o CMakeFiles/TrafficLib.dir/src/Light.cpp.s
+
 # Object files for target TrafficLib
 TrafficLib_OBJECTS = \
 "CMakeFiles/TrafficLib.dir/src/Car.cpp.o" \
 "CMakeFiles/TrafficLib.dir/src/Road.cpp.o" \
 "CMakeFiles/TrafficLib.dir/src/Server.cpp.o" \
-"CMakeFiles/TrafficLib.dir/src/Map.cpp.o"
+"CMakeFiles/TrafficLib.dir/src/Map.cpp.o" \
+"CMakeFiles/TrafficLib.dir/src/Light.cpp.o"
 
 # External object files for target TrafficLib
 TrafficLib_EXTERNAL_OBJECTS =
@@ -139,9 +154,10 @@ TrafficLib/libTrafficLib.a: TrafficLib/CMakeFiles/TrafficLib.dir/src/Car.cpp.o
 TrafficLib/libTrafficLib.a: TrafficLib/CMakeFiles/TrafficLib.dir/src/Road.cpp.o
 TrafficLib/libTrafficLib.a: TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o
 TrafficLib/libTrafficLib.a: TrafficLib/CMakeFiles/TrafficLib.dir/src/Map.cpp.o
+TrafficLib/libTrafficLib.a: TrafficLib/CMakeFiles/TrafficLib.dir/src/Light.cpp.o
 TrafficLib/libTrafficLib.a: TrafficLib/CMakeFiles/TrafficLib.dir/build.make
 TrafficLib/libTrafficLib.a: TrafficLib/CMakeFiles/TrafficLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lukams/CodingProjects/Traffic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libTrafficLib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lukams/CodingProjects/Traffic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libTrafficLib.a"
 	cd /home/lukams/CodingProjects/Traffic/build/TrafficLib && $(CMAKE_COMMAND) -P CMakeFiles/TrafficLib.dir/cmake_clean_target.cmake
 	cd /home/lukams/CodingProjects/Traffic/build/TrafficLib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TrafficLib.dir/link.txt --verbose=$(VERBOSE)
 

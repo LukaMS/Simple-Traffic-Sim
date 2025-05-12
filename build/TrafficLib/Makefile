@@ -154,6 +154,30 @@ src/Car.cpp.s:
 	cd /home/lukams/CodingProjects/Traffic/build && $(MAKE) $(MAKESILENT) -f TrafficLib/CMakeFiles/TrafficLib.dir/build.make TrafficLib/CMakeFiles/TrafficLib.dir/src/Car.cpp.s
 .PHONY : src/Car.cpp.s
 
+src/Light.o: src/Light.cpp.o
+.PHONY : src/Light.o
+
+# target to build an object file
+src/Light.cpp.o:
+	cd /home/lukams/CodingProjects/Traffic/build && $(MAKE) $(MAKESILENT) -f TrafficLib/CMakeFiles/TrafficLib.dir/build.make TrafficLib/CMakeFiles/TrafficLib.dir/src/Light.cpp.o
+.PHONY : src/Light.cpp.o
+
+src/Light.i: src/Light.cpp.i
+.PHONY : src/Light.i
+
+# target to preprocess a source file
+src/Light.cpp.i:
+	cd /home/lukams/CodingProjects/Traffic/build && $(MAKE) $(MAKESILENT) -f TrafficLib/CMakeFiles/TrafficLib.dir/build.make TrafficLib/CMakeFiles/TrafficLib.dir/src/Light.cpp.i
+.PHONY : src/Light.cpp.i
+
+src/Light.s: src/Light.cpp.s
+.PHONY : src/Light.s
+
+# target to generate assembly for a file
+src/Light.cpp.s:
+	cd /home/lukams/CodingProjects/Traffic/build && $(MAKE) $(MAKESILENT) -f TrafficLib/CMakeFiles/TrafficLib.dir/build.make TrafficLib/CMakeFiles/TrafficLib.dir/src/Light.cpp.s
+.PHONY : src/Light.cpp.s
+
 src/Map.o: src/Map.cpp.o
 .PHONY : src/Map.o
 
@@ -238,6 +262,9 @@ help:
 	@echo "... src/Car.o"
 	@echo "... src/Car.i"
 	@echo "... src/Car.s"
+	@echo "... src/Light.o"
+	@echo "... src/Light.i"
+	@echo "... src/Light.s"
 	@echo "... src/Map.o"
 	@echo "... src/Map.i"
 	@echo "... src/Map.s"

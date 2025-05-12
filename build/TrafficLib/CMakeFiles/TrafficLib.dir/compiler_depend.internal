@@ -67,11 +67,17 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Car.cpp.o
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
+TrafficLib/CMakeFiles/TrafficLib.dir/src/Light.cpp.o
+ /home/lukams/CodingProjects/Traffic/TrafficLib/src/Light.cpp
+ /home/lukams/CodingProjects/Traffic/TrafficLib/include/Light/Light.h
+ /usr/include/stdc-predef.h
+
 TrafficLib/CMakeFiles/TrafficLib.dir/src/Map.cpp.o
  /home/lukams/CodingProjects/Traffic/TrafficLib/src/Map.cpp
  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Point.h
  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Road.h
  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Car/Car.h
+ /home/lukams/CodingProjects/Traffic/TrafficLib/include/Light/Light.h
  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Map/Map.h
  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Point.h
  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Road.h
@@ -448,6 +454,7 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o
  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Point.h
  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Road.h
  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Car/Car.h
+ /home/lukams/CodingProjects/Traffic/TrafficLib/include/Light/Light.h
  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Map/Map.h
  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Point.h
  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Road.h

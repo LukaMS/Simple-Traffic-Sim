@@ -66,10 +66,15 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Car.cpp.o: /home/lukams/CodingProjects/
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
+TrafficLib/CMakeFiles/TrafficLib.dir/src/Light.cpp.o: /home/lukams/CodingProjects/Traffic/TrafficLib/src/Light.cpp \
+  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Light/Light.h \
+  /usr/include/stdc-predef.h
+
 TrafficLib/CMakeFiles/TrafficLib.dir/src/Map.cpp.o: /home/lukams/CodingProjects/Traffic/TrafficLib/src/Map.cpp \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Point.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Road.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Car/Car.h \
+  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Light/Light.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Map/Map.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Point.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Road.h \
@@ -444,6 +449,7 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Point.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Road.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Car/Car.h \
+  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Light/Light.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Map/Map.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Point.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Road.h \
@@ -1763,14 +1769,6 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/asio/execution/blocking_adaptation.hpp:
 
-/usr/include/asio/impl/read_until.hpp:
-
-/usr/include/asio/impl/error_code.ipp:
-
-/usr/include/asio/coroutine.hpp:
-
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/network.hpp:
-
 /usr/include/asio/packaged_task.hpp:
 
 /usr/include/asio/ip/multicast.hpp:
@@ -1855,10 +1853,6 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/include/linux/posix_types.h:
-
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/stdint.hpp:
-
 /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h:
 
 /usr/include/asio/traits/equality_comparable.hpp:
@@ -1868,6 +1862,10 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 /usr/include/c++/13/cwchar:
 
 /usr/include/asio/basic_raw_socket.hpp:
+
+/usr/include/asio/execution/blocking.hpp:
+
+/usr/include/time.h:
 
 /usr/include/asio/detail/initiate_defer.hpp:
 
@@ -1990,6 +1988,14 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 /usr/include/c++/13/bits/basic_string.h:
 
 /usr/include/asio/detail/is_buffer_sequence.hpp:
+
+/usr/include/asio/impl/read_until.hpp:
+
+/usr/include/asio/impl/error_code.ipp:
+
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/network.hpp:
+
+/usr/include/asio/coroutine.hpp:
 
 /usr/include/c++/13/bits/string_view.tcc:
 
@@ -2313,15 +2319,13 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Road.h:
 
-/usr/include/time.h:
-
-/usr/include/asio/execution/blocking.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/asio/detail/handler_alloc_helpers.hpp:
 
 /usr/include/c++/13/bits/deque.tcc:
+
+/home/lukams/CodingProjects/Traffic/TrafficLib/src/Light.cpp:
 
 /usr/include/asio/detail/string_view.hpp:
 
@@ -2426,6 +2430,8 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 /usr/include/c++/13/system_error:
 
 /usr/include/c++/13/bits/ostream_insert.h:
+
+/home/lukams/CodingProjects/Traffic/TrafficLib/include/Light/Light.h:
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/system_error.hpp:
 
@@ -2598,6 +2604,10 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/c++/13/cstdio:
+
+/usr/include/linux/posix_types.h:
+
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/stdint.hpp:
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/type_traits.hpp:
 
@@ -2848,6 +2858,12 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 /usr/include/asio/use_future.hpp:
 
 /usr/include/asio/detail/atomic_count.hpp:
+
+/usr/include/asio/this_coro.hpp:
+
+/usr/include/asio/execution/bad_executor.hpp:
+
+/usr/include/asio/detail/memory.hpp:
 
 /usr/include/asio/detail/blocking_executor_op.hpp:
 
@@ -3172,9 +3188,3 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 /usr/include/c++/13/algorithm:
 
 /usr/include/asio/error_code.hpp:
-
-/usr/include/asio/this_coro.hpp:
-
-/usr/include/asio/detail/memory.hpp:
-
-/usr/include/asio/execution/bad_executor.hpp:

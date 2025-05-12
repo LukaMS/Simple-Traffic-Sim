@@ -70,6 +70,7 @@ TrafficApp/CMakeFiles/TrafficApp.dir/main.cpp.o: /home/lukams/CodingProjects/Tra
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Point.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Road.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Car/Car.h \
+  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Light/Light.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Map/Map.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Point.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Road.h \
@@ -1798,6 +1799,8 @@ TrafficApp/CMakeFiles/TrafficApp.dir/main.cpp.o: /home/lukams/CodingProjects/Tra
 
 /usr/include/c++/13/bits/string_view.tcc:
 
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
 /usr/include/boost/asio/coroutine.hpp:
 
 /usr/include/boost/predef/compiler/compaq.h:
@@ -2076,11 +2079,11 @@ TrafficApp/CMakeFiles/TrafficApp.dir/main.cpp.o: /home/lukams/CodingProjects/Tra
 
 /usr/include/boost/asio/detail/resolve_op.hpp:
 
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/http/parser.hpp:
+
 /usr/include/boost/asio/ip/impl/address_v6.ipp:
 
 /usr/include/boost/assert/source_location.hpp:
-
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/http/parser.hpp:
 
 /usr/include/boost/asio/impl/connect.hpp:
 
@@ -2334,8 +2337,6 @@ TrafficApp/CMakeFiles/TrafficApp.dir/main.cpp.o: /home/lukams/CodingProjects/Tra
 
 /usr/include/boost/asio/system_timer.hpp:
 
-/usr/include/boost/asio/buffered_stream_fwd.hpp:
-
 /usr/include/boost/asio/buffered_read_stream.hpp:
 
 /usr/include/boost/asio/ip/tcp.hpp:
@@ -2454,10 +2455,6 @@ TrafficApp/CMakeFiles/TrafficApp.dir/main.cpp.o: /home/lukams/CodingProjects/Tra
 
 /usr/include/boost/asio/detail/array_fwd.hpp:
 
-/usr/include/boost/predef/compiler/greenhills.h:
-
-/usr/include/boost/predef/compiler/palm.h:
-
 /usr/include/boost/asio/detail/epoll_reactor.hpp:
 
 /usr/include/boost/asio/ip/network_v6.hpp:
@@ -2511,6 +2508,14 @@ TrafficApp/CMakeFiles/TrafficApp.dir/main.cpp.o: /home/lukams/CodingProjects/Tra
 /usr/include/boost/asio/detail/date_time_fwd.hpp:
 
 /usr/include/boost/predef/detail/comp_detected.h:
+
+/usr/include/boost/predef/compiler/greenhills.h:
+
+/usr/include/boost/predef/compiler/palm.h:
+
+/home/lukams/CodingProjects/Traffic/TrafficLib/include/Light/Light.h:
+
+/usr/include/boost/type_traits/intrinsics.hpp:
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/functional.hpp:
 
@@ -2632,8 +2637,6 @@ TrafficApp/CMakeFiles/TrafficApp.dir/main.cpp.o: /home/lukams/CodingProjects/Tra
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/connection.hpp:
 
-/usr/include/boost/type_traits/intrinsics.hpp:
-
 /usr/include/boost/asio/bind_cancellation_slot.hpp:
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/extensions/permessage_deflate/disabled.hpp:
@@ -2752,6 +2755,14 @@ TrafficApp/CMakeFiles/TrafficApp.dir/main.cpp.o: /home/lukams/CodingProjects/Tra
 
 /usr/include/boost/asio/ip/detail/socket_option.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/usr/include/c++/13/ext/alloc_traits.h:
+
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/system_error.hpp:
+
+/usr/include/boost/asio/io_service.hpp:
+
 /usr/include/boost/asio/readable_pipe.hpp:
 
 /usr/include/boost/asio/detail/posix_global.hpp:
@@ -2801,14 +2812,6 @@ TrafficApp/CMakeFiles/TrafficApp.dir/main.cpp.o: /home/lukams/CodingProjects/Tra
 /usr/include/boost/asio/detail/impl/timer_queue_set.ipp:
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/stdint.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
-
-/usr/include/c++/13/ext/alloc_traits.h:
-
-/usr/include/boost/asio/io_service.hpp:
-
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/system_error.hpp:
 
 /home/lukams/CodingProjects/Traffic/TrafficLib/include/Car/Car.h:
 
@@ -2934,6 +2937,8 @@ TrafficApp/CMakeFiles/TrafficApp.dir/main.cpp.o: /home/lukams/CodingProjects/Tra
 
 /usr/include/boost/preprocessor/repeat.hpp:
 
+/usr/include/boost/asio/buffered_stream_fwd.hpp:
+
 /usr/include/boost/asio/detail/cstddef.hpp:
 
 /usr/include/boost/asio/detail/global.hpp:
@@ -3051,6 +3056,16 @@ TrafficApp/CMakeFiles/TrafficApp.dir/main.cpp.o: /home/lukams/CodingProjects/Tra
 /usr/include/boost/date_time/gregorian/greg_year.hpp:
 
 /usr/include/boost/asio/detail/concurrency_hint.hpp:
+
+/usr/include/boost/preprocessor/logical/and.hpp:
+
+/usr/include/boost/predef/library/std/cxx.h:
+
+/usr/include/boost/asio/impl/multiple_exceptions.ipp:
+
+/usr/include/boost/regex/config.hpp:
+
+/usr/include/boost/preprocessor/control/detail/while.hpp:
 
 /usr/include/asm-generic/ioctl.h:
 
@@ -3273,16 +3288,6 @@ TrafficApp/CMakeFiles/TrafficApp.dir/main.cpp.o: /home/lukams/CodingProjects/Tra
 /usr/include/boost/predef/compiler/metaware.h:
 
 /usr/include/boost/asio/detail/reactive_socket_service.hpp:
-
-/usr/include/boost/preprocessor/logical/and.hpp:
-
-/usr/include/boost/predef/library/std/cxx.h:
-
-/usr/include/boost/asio/impl/multiple_exceptions.ipp:
-
-/usr/include/boost/regex/config.hpp:
-
-/usr/include/boost/preprocessor/control/detail/while.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
@@ -4265,5 +4270,3 @@ TrafficApp/CMakeFiles/TrafficApp.dir/main.cpp.o: /home/lukams/CodingProjects/Tra
 /usr/include/c++/13/bits/stl_vector.h:
 
 /usr/include/c++/13/bits/stream_iterator.h:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TrafficLib.dir/src/Car.cpp.o"
   "CMakeFiles/TrafficLib.dir/src/Car.cpp.o.d"
+  "CMakeFiles/TrafficLib.dir/src/Light.cpp.o"
+  "CMakeFiles/TrafficLib.dir/src/Light.cpp.o.d"
   "CMakeFiles/TrafficLib.dir/src/Map.cpp.o"
   "CMakeFiles/TrafficLib.dir/src/Map.cpp.o.d"
   "CMakeFiles/TrafficLib.dir/src/Road.cpp.o"
