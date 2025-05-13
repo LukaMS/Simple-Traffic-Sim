@@ -1,32 +1,67 @@
-# Prerequisites
-*.d
+# —————————————————————————————
+# Common build directory
+# —————————————————————————————
+# If you build out-of-source into "build/"
+build/
+*/build/
 
-# Compiled Object files
-*.slo
-*.lo
+# —————————————————————————————
+# Object files and libraries
+# —————————————————————————————
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
+*.lo
+*.slo
 *.lai
 *.la
 *.a
 *.lib
+*.so
+*.dylib
+*.dll
 
+# —————————————————————————————
+# Precompiled headers
+# —————————————————————————————
+*.gch
+*.pch
+
+# —————————————————————————————
+# Dependency files
+# —————————————————————————————
+*.d
+*.dSYM/
+.dep/
+*.dwo
+*.dwp
+
+# —————————————————————————————
 # Executables
+# —————————————————————————————
 *.exe
 *.out
 *.app
+
+# —————————————————————————————
+# IDE / editor settings (optional)
+# —————————————————————————————
+# Visual Studio
+*.vcxproj*
+*.sln
+*.user
+# CLion / JetBrains
+.idea/
+*.iml
+# Xcode
+*.xcworkspace
+*.xcuserstate
+# VS Code
+.vscode/
+
+# —————————————————————————————
+# Miscellaneous
+# —————————————————————————————
+*.log
+*.zip
+*.tar.gz
+*.swp
