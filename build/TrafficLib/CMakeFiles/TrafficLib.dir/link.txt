@@ -1,2 +1,0 @@
-/usr/bin/ar qc libTrafficLib.a CMakeFiles/TrafficLib.dir/src/Car.cpp.o CMakeFiles/TrafficLib.dir/src/Road.cpp.o CMakeFiles/TrafficLib.dir/src/Server.cpp.o CMakeFiles/TrafficLib.dir/src/Map.cpp.o CMakeFiles/TrafficLib.dir/src/Light.cpp.o
-/usr/bin/ranlib libTrafficLib.a

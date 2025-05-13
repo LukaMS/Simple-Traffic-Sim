@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/TrafficApp.dir/main.cpp.o -o TrafficApp  ../TrafficLib/libTrafficLib.a /usr/lib/x86_64-linux-gnu/libjsoncpp.so.1.9.5 

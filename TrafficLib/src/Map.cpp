@@ -3,21 +3,22 @@
 #include "Road/Road.h"
 #include <json/json.h>
 #include <string>
+#include <iostream>
 #include "Light/Light.h"
 
 void Map::createMap(){
     //LIGHTS
-    Light* EastWest1 = new Light(Light::RED1, -15,10);
-    Light* EastWest2 = new Light(Light::RED1, -15,-10);
+    Light* EastWest1 = new Light(Light::RED1, -40,20);
+    Light* EastWest2 = new Light(Light::RED1, -40,-20);
 
-    Light* WestEast1 = new Light(Light::RED1, 15,10);
-    Light* WestEast2 = new Light(Light::RED1, 15,-10);
+    Light* WestEast1 = new Light(Light::RED1, 40,20);
+    Light* WestEast2 = new Light(Light::RED1, 40,-20);
 
-    Light* NorthSouth1 = new Light(Light::GREEN, 10, -15);
-    Light* NorthSouth2 = new Light(Light::GREEN, -10, -15);
+    Light* NorthSouth1 = new Light(Light::GREEN, 20, -40);
+    Light* NorthSouth2 = new Light(Light::GREEN, -20, -40);
 
-    Light* SouthNorth1 = new Light(Light::GREEN, 10, 15);
-    Light* SouthNorth2 = new Light(Light::GREEN, -10, 15);
+    Light* SouthNorth1 = new Light(Light::GREEN, 20, 40);
+    Light* SouthNorth2 = new Light(Light::GREEN, -20, 40);
 
     for (Light* light : {EastWest1, EastWest2, WestEast1, WestEast2, NorthSouth1, NorthSouth2, SouthNorth1, SouthNorth2}){
         lights_.push_back(light);
@@ -26,39 +27,39 @@ void Map::createMap(){
     //ROADS
 
     //WEST TO EAST
-    Point Road1Start(-100,-5);
-    Point Road1End(-5,-5);
+    Point Road1Start(-200,-10);
+    Point Road1End(-10,-10);
     Road* Road1 = new Road(Road1Start, Road1End, true, 1, WestEast1);
 
-    Point Road2Start(5,-5);
-    Point Road2End(100,-5);
+    Point Road2Start(10,-10);
+    Point Road2End(200,-10);
     Road* Road2 = new Road(Road2Start, Road2End, true, 1);
 
     //EAST TO WEST
-    Point Road3Start(100,5);
-    Point Road3End(5,5);
+    Point Road3Start(200,10);
+    Point Road3End(10,10);
     Road* Road3 = new Road(Road3Start, Road3End, true, -1, EastWest1);
 
-    Point Road4Start(-5,5);
-    Point Road4End(-100,5);
+    Point Road4Start(-10,10);
+    Point Road4End(-200,10);
     Road* Road4 = new Road(Road4Start, Road4End, true, -1);
 
     //SOUTH TO NORTH
-    Point Road5Start(5,-100);
-    Point Road5End(5,-5);
+    Point Road5Start(10,-200);
+    Point Road5End(10,-10);
     Road* Road5 = new Road(Road5Start, Road5End, false, 1, SouthNorth1);
 
-    Point Road6Start(5,5);
-    Point Road6End(5,100);
+    Point Road6Start(10,10);
+    Point Road6End(10,200);
     Road* Road6 = new Road(Road6Start, Road6End, false, 1);
 
     //NORTH TO SOUTH
-    Point Road7Start(-5,100);
-    Point Road7End(-5,5);
+    Point Road7Start(-10,200);
+    Point Road7End(-10,10);
     Road* Road7 = new Road(Road7Start, Road7End, false, -1, NorthSouth1);
 
-    Point Road8Start(-5,-5);
-    Point Road8End(-5,-100);
+    Point Road8Start(-10,-10);
+    Point Road8End(-10,-200);
     Road* Road8 = new Road(Road8Start, Road8End, false, -1);
 
     //CONNECTIONS
@@ -94,6 +95,7 @@ void Map::changeLights(){
 }
 
 void Map::addCar(Road* road) {
+    std::cout << "test" << std::endl;
     auto newCar = std::make_unique<Car>(road->getStart().x, road->getStart().y, road);
     map_[road].push_back(std::move(newCar));
 }
@@ -172,29 +174,25 @@ std::string Map::getMapCars() {
 }
 
 void Map::updateMap() {
-    for (auto it = map_.begin(); it != map_.end(); ) {
-        Road* currentRoad = it->first;
-        auto& cars = it->second;
-
+    // Copy the keys if you might move cars between vectors,
+    // but since you’re only moving between existing vectors,
+    // iterating by reference is fine:
+    for (auto& [roadPtr, cars] : map_) {
         Car* carInFront = nullptr;
-
-        for (auto carIt = cars.begin(); carIt != cars.end(); ) {
+        for (auto carIt = cars.begin(); carIt != cars.end(); /*no-op*/) {
             Car* car = carIt->get();
 
-            if (car->getRoad() == nullptr) {
+            if (!car->getRoad()) {
                 carIt = cars.erase(carIt);
             } else {
-                Road* before = currentRoad;
-
+                Road* before = roadPtr;
                 car->move(carInFront);
-
                 Road* after = car->getRoad();
 
-                // If car changed roads, move it
-                if (after != before && after != nullptr) {
-                    auto movedCar = std::move(*carIt);
+                if (after != before && after) {
+                    auto moved = std::move(*carIt);
                     carIt = cars.erase(carIt);
-                    map_[after].push_back(std::move(movedCar));
+                    map_[after].push_back(std::move(moved));
                 } else {
                     carInFront = car;
                     ++carIt;

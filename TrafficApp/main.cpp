@@ -26,7 +26,7 @@ int main(){
             // Send updated car positions
             std::string carData = map.getMapCars();
             server.sendMessage(carData);
-            std::this_thread::sleep_for(std::chrono::milliseconds(100)); 
+            std::this_thread::sleep_for(std::chrono::milliseconds(50)); 
         }
     });
 
@@ -45,14 +45,14 @@ int main(){
     std::thread lightThread([&]() {
         std::random_device rd;
         std::mt19937 gen(rd());
-        std::uniform_int_distribution<> dist(5, 8); // seconds
+        std::uniform_int_distribution<> dist(8, 10); // seconds
 
         while (running) {
             map.changeLights();
             std::string lightData = map.getLightLayout();
             server.sendMessage(lightData);
 
-            std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+            std::this_thread::sleep_for(std::chrono::milliseconds(2000));
 
             map.changeLights();
             std::string lightDataAgain = map.getLightLayout();
