@@ -1,10 +1,12 @@
 #include "Road/Road.h"
+#include "Light/Light.h"
 
-Road::Road(Point start, Point end, bool horz, int dir)
+Road::Road(Point start, Point end, bool horz, int dir, Light* light_)
     : startPoint{start}
     , endPoint{end}
     , isHorz{horz}
     , direction{dir}
+    , light{light_}
 {
 }
 
@@ -20,7 +22,7 @@ bool Road::onRoad(double pos, char coord){
             return pos >= endPoint.y;
         }
     } else {
-        if(coord = 'X'){
+        if(coord == 'X'){
             return pos <= endPoint.x;
         } else {
             return pos <= endPoint.y;

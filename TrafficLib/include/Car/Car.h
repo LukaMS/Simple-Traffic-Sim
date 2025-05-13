@@ -7,7 +7,8 @@ class Car {
         Car(double x, double y, Road* road);
         double getX();
         double getY();
-        void move();
+        void move(Car* carInFront);
+        bool canMove(Car* car, Car* carInFront, bool movingHorz, double newPos);
         Road* getRoad(){return currentRoad;};
     private:
         double posX, posY;

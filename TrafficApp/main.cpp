@@ -2,25 +2,73 @@
 #include "Car/Car.h"
 #include "Road/Point.h"
 #include "Road/Road.h"
+#include "Server/Server.h"
+#include "Map/Map.h"
 #include <chrono>
 #include <thread>
+#include <atomic>
+#include <random>
 
 int main(){
-    Point start1(-100,0);
-    Point end1(0.0 , 0.0);
-    Point start2(0,0);
-    Point end2(100,0);
-    Road* road1 = new Road(start1, end1, true, 1);
-    Road* road2 = new Road(start2, end2, true, 1);
 
-    Car myCar(road1->getStart().x, road1->getStart().y, road1);
-    road1->connectRoad('S', road2);
+    std::atomic<bool> running(true);
 
-    std::chrono::seconds interval(1);
-    while(myCar.getRoad() != nullptr){
-        myCar.move();
-        std::cout << "X: " << myCar.getX() << " Y: " << myCar.getY() << std::endl;
-        std::this_thread::sleep_for(interval);
-    }
+    Map map;
+    map.createMap();
+
+    Server server;
+    server.setMap(&map);  // pass reference to map
+    server.start(9002);
+
+    std::thread simThread([&]() {
+        while (running) {
+            map.updateMap();
+            // Send updated car positions
+            std::string carData = map.getMapCars();
+            server.sendMessage(carData);
+            std::this_thread::sleep_for(std::chrono::milliseconds(100)); 
+        }
+    });
+
+    std::thread spawnThread([&]() {
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_int_distribution<> dist(0, 3);
+
+        while (running) {
+            Road* randomStart = map.getStartRoads()[dist(gen)];
+            map.addCar(randomStart);
+            std::this_thread::sleep_for(std::chrono::seconds(2));
+        }
+    });
+
+    std::thread lightThread([&]() {
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_int_distribution<> dist(5, 8); // seconds
+
+        while (running) {
+            map.changeLights();
+            std::string lightData = map.getLightLayout();
+            server.sendMessage(lightData);
+
+            std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+
+            map.changeLights();
+            std::string lightDataAgain = map.getLightLayout();
+            server.sendMessage(lightDataAgain);
+
+            int delay = dist(gen);
+            std::this_thread::sleep_for(std::chrono::seconds(delay));
+        }
+    });
+
+
+    std::cin.get();  // wait until Enter is pressed
+    running = false;     // Stop simulation loop
+    simThread.join();
+    spawnThread.join();
+    lightThread.join();
+    server.stop();
     return 0;
 }
