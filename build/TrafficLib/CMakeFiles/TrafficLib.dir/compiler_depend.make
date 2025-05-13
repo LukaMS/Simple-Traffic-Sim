@@ -5,6 +5,8 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Car.cpp.o: /home/lukams/CodingProjects/
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Point.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Road.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Car/Car.h \
+  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Light/Light.h \
+  /usr/include/alloca.h \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
   /usr/include/c++/13/bits/alloc_traits.h \
@@ -25,6 +27,8 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Car.cpp.o: /home/lukams/CodingProjects/
   /usr/include/c++/13/bits/ptr_traits.h \
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/specfun.h \
+  /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_construct.h \
   /usr/include/c++/13/bits/stl_function.h \
@@ -38,6 +42,7 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Car.cpp.o: /home/lukams/CodingProjects/
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/cmath \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
@@ -46,16 +51,72 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Car.cpp.o: /home/lukams/CodingProjects/
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/type_traits.h \
   /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/limits \
   /usr/include/c++/13/map \
   /usr/include/c++/13/new \
   /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/tr1/bessel_function.tcc \
+  /usr/include/c++/13/tr1/beta_function.tcc \
+  /usr/include/c++/13/tr1/ell_integral.tcc \
+  /usr/include/c++/13/tr1/exp_integral.tcc \
+  /usr/include/c++/13/tr1/gamma.tcc \
+  /usr/include/c++/13/tr1/hypergeometric.tcc \
+  /usr/include/c++/13/tr1/legendre_function.tcc \
+  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13/tr1/poly_hermite.tcc \
+  /usr/include/c++/13/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13/tr1/special_function_util.h \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
+  /usr/include/endian.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/math.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -64,6 +125,8 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Car.cpp.o: /home/lukams/CodingProjects/
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
 TrafficLib/CMakeFiles/TrafficLib.dir/src/Light.cpp.o: /home/lukams/CodingProjects/Traffic/TrafficLib/src/Light.cpp \
@@ -317,6 +380,7 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Map.cpp.o: /home/lukams/CodingProjects/
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 TrafficLib/CMakeFiles/TrafficLib.dir/src/Road.cpp.o: /home/lukams/CodingProjects/Traffic/TrafficLib/src/Road.cpp \
+  /home/lukams/CodingProjects/Traffic/TrafficLib/include/Light/Light.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Point.h \
   /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Road.h \
   /usr/include/c++/13/backward/binders.h \
@@ -1401,8 +1465,6 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/c++/13/mutex:
 
-/usr/include/c++/13/limits:
-
 /usr/include/c++/13/future:
 
 /usr/include/c++/13/ctime:
@@ -1447,8 +1509,6 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/assert.h:
 
-/usr/include/asm-generic/types.h:
-
 /usr/include/x86_64-linux-gnu/sys/ioctl.h:
 
 /usr/include/asm-generic/posix_types.h:
@@ -1472,8 +1532,6 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 /usr/include/asio/write.hpp:
 
 /usr/include/asio/traits/submit_free.hpp:
-
-/usr/include/asio/traits/static_require.hpp:
 
 /usr/include/asio/traits/start_free.hpp:
 
@@ -1645,8 +1703,6 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/asio/impl/system_executor.hpp:
 
-/usr/include/asio/impl/system_context.ipp:
-
 /usr/include/asio/impl/serial_port_base.ipp:
 
 /usr/include/asio/impl/redirect_error.hpp:
@@ -1769,83 +1825,57 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/asio/execution/blocking_adaptation.hpp:
 
-/usr/include/asio/packaged_task.hpp:
+/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
-/usr/include/asio/ip/multicast.hpp:
+/usr/include/asio/execution/any_executor.hpp:
 
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/chrono.hpp:
+/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
 
-/home/lukams/CodingProjects/Traffic/TrafficLib/src/Road.cpp:
+/usr/include/asio/execution/allocator.hpp:
 
-/usr/include/asio/detail/reactor_op.hpp:
+/usr/include/c++/13/algorithm:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+/usr/include/asio/error_code.hpp:
 
-/usr/include/asio/traits/static_require_concept.hpp:
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
-/usr/include/asio/detail/impl/thread_context.ipp:
+/usr/include/asio/dispatch.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+/usr/include/asio/detail/wrapped_handler.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+/usr/include/asio/impl/prepend.hpp:
 
-/usr/include/c++/13/queue:
+/usr/include/asio/detail/work_dispatcher.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+/usr/include/asio/detail/winsock_init.hpp:
 
-/usr/include/c++/13/bits/char_traits.h:
+/usr/include/asio/detail/variadic_templates.hpp:
 
-/usr/include/asio/detail/strand_executor_service.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/asio/basic_deadline_timer.hpp:
-
-/usr/include/c++/13/bits/exception_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
-
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/endpoint.hpp:
-
-/usr/include/c++/13/ext/atomicity.h:
-
-/usr/include/asio/execution/relationship.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
-
-/usr/include/asio/detail/impl/service_registry.hpp:
+/usr/include/asio/detail/type_traits.hpp:
 
 /usr/include/asio/detail/tss_ptr.hpp:
 
+/usr/include/asio/read.hpp:
+
+/usr/include/asio/detail/timer_scheduler.hpp:
+
+/usr/include/asio/detail/timer_queue_set.hpp:
+
+/usr/include/asio/detail/timer_queue.hpp:
+
+/usr/include/asio/detail/thread_info_base.hpp:
+
+/usr/include/asio/detail/thread_group.hpp:
+
+/usr/include/c++/13/ext/atomicity.h:
+
 /usr/include/c++/13/sstream:
 
-/usr/include/asio/execution/context.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/asio/basic_socket.hpp:
-
 /usr/include/asio/detail/event.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/asm-generic/socket.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/include/asio/consign.hpp:
 
 /usr/include/c++/13/bits/locale_conv.h:
 
@@ -1853,25 +1883,15 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h:
+/usr/include/asio/ip/bad_address_cast.hpp:
 
-/usr/include/asio/traits/equality_comparable.hpp:
+/usr/include/asio/detail/timer_queue_base.hpp:
 
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/c++/13/cwchar:
-
-/usr/include/asio/basic_raw_socket.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/asio/execution/blocking.hpp:
 
 /usr/include/time.h:
-
-/usr/include/asio/detail/initiate_defer.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
@@ -1879,39 +1899,7 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
-
-/usr/include/signal.h:
-
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/thread.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/c++/13/bits/requires_hosted.h:
-
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/home/lukams/CodingProjects/Traffic/TrafficLib/include/Server/Server.h:
-
-/usr/include/asio/detail/bind_handler.hpp:
-
-/usr/include/stdlib.h:
-
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/http/request.hpp:
-
-/usr/include/asio/impl/detached.hpp:
-
-/usr/include/asio/detail/impl/epoll_reactor.hpp:
 
 /usr/include/stdio.h:
 
@@ -1920,6 +1908,14 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 /usr/include/stdint.h:
 
 /usr/include/endian.h:
+
+/usr/include/netdb.h:
+
+/usr/include/asio/posix/basic_descriptor.hpp:
+
+/usr/include/asio/detail/timer_queue_ptime.hpp:
+
+/usr/include/sched.h:
 
 /usr/include/wctype.h:
 
@@ -1933,15 +1929,9 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/jsoncpp/json/value.h:
 
-/usr/include/c++/13/bits/uniform_int_dist.h:
-
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/asio.hpp:
-
-/usr/include/jsoncpp/json/json_features.h:
-
-/usr/include/asio/basic_socket_acceptor.hpp:
-
 /usr/include/string.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/asio/ip/detail/endpoint.hpp:
 
@@ -1950,12 +1940,6 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 /usr/include/c++/13/vector:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/c++/13/exception:
-
-/usr/include/c++/13/istream:
 
 /usr/include/c++/13/ext/concurrence.h:
 
@@ -1975,77 +1959,95 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/processors/hybi08.hpp:
 
+/usr/include/c++/13/exception:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/13/deque:
 
-/usr/include/asio/detail/impl/strand_executor_service.ipp:
+/usr/include/c++/13/cwchar:
 
-/usr/include/stdc-predef.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h:
 
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
+/usr/include/asio/traits/equality_comparable.hpp:
 
-/usr/include/c++/13/bits/basic_string.h:
+/usr/include/x86_64-linux-gnu/sys/select.h:
 
-/usr/include/asio/detail/is_buffer_sequence.hpp:
+/usr/include/asio/basic_raw_socket.hpp:
 
-/usr/include/asio/impl/read_until.hpp:
+/usr/include/asio/streambuf.hpp:
 
-/usr/include/asio/impl/error_code.ipp:
+/usr/include/asio/stream_file.hpp:
 
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/network.hpp:
+/usr/include/asio/execution/sender.hpp:
 
-/usr/include/asio/coroutine.hpp:
+/usr/include/c++/13/cstdint:
+
+/usr/include/asio/impl/executor.hpp:
+
+/usr/include/asio/any_io_executor.hpp:
+
+/usr/include/asio/detail/socket_holder.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/c++/13/iostream:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asio/execution.hpp:
+
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/logger/basic.hpp:
+
+/usr/include/c++/13/compare:
+
+/usr/include/asio/buffered_read_stream_fwd.hpp:
+
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/processors/hybi07.hpp:
+
+/usr/include/asio/ip/address_v6_range.hpp:
+
+/usr/include/c++/13/bits/vector.tcc:
 
 /usr/include/c++/13/bits/string_view.tcc:
 
-/usr/include/c++/13/string_view:
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
-/usr/include/x86_64-linux-gnu/bits/environments.h:
+/usr/include/asio/execution/context.hpp:
 
-/usr/include/asio/detail/handler_invoke_helpers.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
-/usr/include/asio/ip/address_v4_iterator.hpp:
+/usr/include/asio/basic_socket.hpp:
 
-/usr/include/asio/connect.hpp:
+/usr/include/asio/traits/set_error_free.hpp:
 
-/usr/include/c++/13/debug/assertions.h:
+/usr/include/c++/13/bits/stl_tempbuf.h:
 
-/usr/include/asio/ip/tcp.hpp:
+/usr/include/asio/detail/select_interrupter.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+/usr/include/c++/13/cerrno:
 
-/usr/include/c++/13/bits/stl_iterator.h:
+/usr/include/c++/13/bits/stringfwd.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+/usr/include/c++/13/cwctype:
 
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+/usr/include/c++/13/bits/sstream.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+/usr/include/asio/buffered_read_stream.hpp:
 
-/usr/include/asio/traits/set_value_member.hpp:
+/usr/include/c++/13/system_error:
 
-/usr/include/asio/execution/detail/submit_receiver.hpp:
+/usr/include/c++/13/bits/ostream_insert.h:
 
-/usr/include/locale.h:
+/usr/include/asio/detail/scheduler_operation.hpp:
 
-/usr/include/c++/13/string:
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/include/features.h:
+/usr/include/c++/13/bits/nested_exception.h:
 
-/usr/include/asio/detail/reactive_socket_recvfrom_op.hpp:
+/usr/include/c++/13/bits/locale_facets.h:
 
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/cpp11.hpp:
-
-/usr/include/c++/13/cstddef:
-
-/usr/include/c++/13/bits/stl_tree.h:
-
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/processors/hybi13.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
+/usr/include/c++/13/bits/locale_classes.tcc:
 
 /usr/include/errno.h:
 
@@ -2061,22 +2063,6 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/c++/13/bits/functional_hash.h:
 
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/c++/13/streambuf:
-
-/usr/include/c++/13/pstl/glue_memory_defs.h:
-
-/usr/include/c++/13/bits/memory_resource.h:
-
-/usr/include/asio/traits/set_value_free.hpp:
-
-/usr/include/asio/completion_condition.hpp:
-
-/usr/include/asio/detail/noncopyable.hpp:
-
-/usr/include/c++/13/bits/exception.h:
-
 /usr/include/asio/ip/address_v6.hpp:
 
 /usr/include/c++/13/typeinfo:
@@ -2085,35 +2071,175 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/asio/detail/socket_option.hpp:
 
-/usr/include/c++/13/bits/locale_classes.tcc:
+/usr/include/c++/13/bits/cxxabi_forced.h:
 
-/usr/include/asio/detail/scheduler_operation.hpp:
+/usr/include/c++/13/pstl/execution_defs.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+/usr/include/c++/13/bits/basic_ios.tcc:
 
-/usr/include/c++/13/iostream:
+/usr/include/asio/detail/buffered_stream_storage.hpp:
 
-/usr/include/asm-generic/errno.h:
+/usr/include/asio/multiple_exceptions.hpp:
+
+/usr/include/c++/13/bit:
+
+/usr/include/c++/13/backward/auto_ptr.h:
+
+/usr/include/asio/basic_datagram_socket.hpp:
+
+/usr/include/asio/traits/require_free.hpp:
+
+/usr/include/asio/detail/signal_set_service.hpp:
+
+/usr/include/asio/detail/throw_error.hpp:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
 /usr/include/jsoncpp/json/allocator.h:
 
-/usr/include/c++/13/compare:
+/usr/include/c++/13/tr1/ell_integral.tcc:
 
-/usr/include/c++/13/bits/localefwd.h:
+/usr/include/asio/execution/detail/as_invocable.hpp:
 
-/usr/include/asm-generic/ioctls.h:
+/usr/include/c++/13/bits/stl_uninitialized.h:
 
-/usr/include/asio/is_executor.hpp:
+/usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h:
 
-/usr/include/asio/basic_writable_pipe.hpp:
+/usr/include/asio/ip/host_name.hpp:
+
+/usr/include/c++/13/bits/new_allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/c++/13/locale:
+
+/usr/include/c++/13/bits/stl_map.h:
+
+/usr/include/c++/13/tr1/exp_integral.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/termios-baud.h:
+
+/usr/include/c++/13/bits/shared_ptr_base.h:
+
+/usr/include/asio/traits/static_require.hpp:
+
+/usr/include/c++/13/tr1/bessel_function.tcc:
+
+/usr/include/asio/detail/impl/strand_executor_service.hpp:
+
+/usr/include/c++/13/bits/stl_stack.h:
+
+/usr/include/c++/13/initializer_list:
+
+/usr/include/c++/13/limits:
+
+/usr/include/c++/13/istream:
+
+/usr/include/c++/13/tuple:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/c++/13/bits/char_traits.h:
+
+/usr/include/c++/13/queue:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+
+/usr/include/asio/detail/strand_executor_service.hpp:
+
+/usr/include/c++/13/cctype:
+
+/usr/include/asio/basic_stream_socket.hpp:
+
+/usr/include/c++/13/tr1/gamma.tcc:
+
+/home/lukams/CodingProjects/Traffic/TrafficLib/src/Car.cpp:
+
+/usr/include/c++/13/bits/shared_ptr_atomic.h:
+
+/usr/include/asio/detail/impl/strand_service.ipp:
+
+/usr/include/c++/13/cmath:
+
+/usr/include/asio/buffered_stream_fwd.hpp:
+
+/usr/include/asio/traits/set_value_member.hpp:
+
+/usr/include/asio/execution/detail/submit_receiver.hpp:
+
+/usr/include/locale.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
+
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/endpoint.hpp:
+
+/usr/include/c++/13/bits/stl_tree.h:
+
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/processors/hybi13.hpp:
+
+/usr/include/asio/local/basic_endpoint.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/math.h:
+
+/usr/include/c++/13/cstdio:
+
+/usr/include/asio/detail/reactive_socket_accept_op.hpp:
+
+/usr/include/asio/detail/chrono.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/connection.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/asio/execution/set_done.hpp:
+
+/usr/include/c++/13/bits/stl_bvector.h:
+
+/usr/include/c++/13/bits/unique_ptr.h:
+
+/home/lukams/CodingProjects/Traffic/TrafficLib/include/Car/Car.h:
+
+/usr/include/asio/generic/seq_packet_protocol.hpp:
+
+/usr/include/asio/detail/wait_op.hpp:
+
+/usr/include/c++/13/bits/allocator.h:
+
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/cpp11.hpp:
+
+/usr/include/c++/13/bits/stl_construct.h:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Point.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
+
+/usr/include/c++/13/ostream:
+
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/asio/impl/system_context.ipp:
+
+/usr/include/c++/13/tr1/riemann_zeta.tcc:
 
 /usr/include/linux/ioctl.h:
 
@@ -2123,6 +2249,8 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/netinet/tcp.h:
 
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
 /usr/include/c++/13/ext/alloc_traits.h:
 
 /usr/include/asio/ip/impl/host_name.ipp:
@@ -2131,47 +2259,37 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
-/usr/include/c++/13/bits/stl_construct.h:
-
-/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/asio/basic_readable_pipe.hpp:
-
-/usr/include/c++/13/ostream:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
-
-/usr/include/asio/execution/set_value.hpp:
-
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/platforms.hpp:
-
-/usr/include/asio/detail/deadline_timer_service.hpp:
-
-/usr/include/asio/detail/conditionally_enabled_mutex.hpp:
-
 /usr/include/asio/ip/resolver_query_base.hpp:
 
 /usr/include/c++/13/bits/move.h:
 
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+/usr/include/c++/13/cstddef:
 
-/usr/include/c++/13/ext/numeric_traits.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/usr/include/asio/detail/array.hpp:
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/utf8_validator.hpp:
+/usr/include/asio/impl/execution_context.hpp:
 
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/memory.hpp:
+/usr/include/asio/detail/reactor.hpp:
 
-/usr/include/c++/13/bits/hash_bytes.h:
+/usr/include/alloca.h:
 
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/server.hpp:
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
-/usr/include/asio/basic_waitable_timer.hpp:
+/usr/include/asio/traits/prefer_free.hpp:
 
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/transport/iostream/connection.hpp:
+/usr/include/c++/13/bits/stl_vector.h:
+
+/usr/include/asio/detail/thread.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
+
+/usr/include/c++/13/array:
+
+/home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Road.h:
+
+/usr/include/c++/13/bits/ios_base.h:
 
 /usr/include/c++/13/bits/node_handle.h:
 
@@ -2183,45 +2301,103 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/endpoint_base.hpp:
 
+/usr/include/asio/any_completion_executor.hpp:
+
+/usr/include/c++/13/bits/range_access.h:
+
 /usr/include/c++/13/bits/memoryfwd.h:
 
-/home/lukams/CodingProjects/Traffic/TrafficLib/src/Car.cpp:
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/system_error.hpp:
+
+/home/lukams/CodingProjects/Traffic/TrafficLib/include/Light/Light.h:
+
+/usr/include/c++/13/bits/exception_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/stat.h:
+
+/usr/include/c++/13/bits/this_thread_sleep.h:
+
+/usr/include/c++/13/bits/exception_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/c++/13/bits/invoke.h:
 
-/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
+/usr/include/c++/13/pstl/glue_memory_defs.h:
 
-/usr/include/asio/generic/stream_protocol.hpp:
+/usr/include/c++/13/bits/memory_resource.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+/usr/include/c++/13/streambuf:
 
-/usr/include/wchar.h:
+/usr/include/asio/traits/set_value_free.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/termios-baud.h:
+/usr/include/asio/completion_condition.hpp:
 
-/usr/include/c++/13/bits/shared_ptr_base.h:
-
-/usr/include/c++/13/bits/ostream.tcc:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+/usr/include/asio/detail/noncopyable.hpp:
 
 /usr/include/c++/13/bits/ptr_traits.h:
 
 /usr/include/asio/associated_cancellation_slot.hpp:
 
-/usr/include/c++/13/bits/uses_allocator_args.h:
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/usr/include/c++/13/bits/atomic_base.h:
+/usr/include/c++/13/bits/functexcept.h:
 
-/usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h:
+/usr/include/c++/13/bits/stl_iterator.h:
 
-/usr/include/asio/ip/host_name.hpp:
+/usr/include/asio/detail/array.hpp:
 
-/usr/include/c++/13/bits/new_allocator.h:
+/usr/include/c++/13/ext/numeric_traits.h:
 
-/usr/include/asio/execution/detail/as_invocable.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
-/usr/include/c++/13/bits/stl_uninitialized.h:
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/extensions/extension.hpp:
+
+/usr/include/c++/13/bits/locale_classes.h:
+
+/usr/include/asio/execution/context_as.hpp:
+
+/usr/include/c++/13/bits/shared_ptr.h:
+
+/usr/include/x86_64-linux-gnu/sys/eventfd.h:
+
+/usr/include/asio/ip/impl/address_v4.ipp:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/asio/detail/keyword_tss_ptr.hpp:
+
+/usr/include/c++/13/bits/basic_string.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/c++/13/bits/refwrap.h:
+
+/usr/include/asio/ip/basic_resolver.hpp:
+
+/usr/include/asio/detail/array_fwd.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/c++/13/string_view:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/asio/detail/handler_invoke_helpers.hpp:
+
+/usr/include/c++/13/bits/specfun.h:
+
+/usr/include/asio/detail/recycling_allocator.hpp:
+
+/usr/include/c++/13/bits/streambuf.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
+
+/usr/include/asio/impl/write.hpp:
+
+/usr/include/asio/detail/posix_mutex.hpp:
+
+/usr/include/asio/detail/config.hpp:
 
 /usr/include/asio/impl/system_context.hpp:
 
@@ -2229,13 +2405,9 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/frame.hpp:
 
-/usr/include/asio/detail/timer_queue.hpp:
-
 /usr/include/c++/13/ios:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/x86_64-linux-gnu/asm/ioctls.h:
 
@@ -2247,59 +2419,33 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
 
-/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
-
-/usr/include/asio/execution/allocator.hpp:
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/c++/13/iosfwd:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
-
-/usr/include/c++/13/bits/predefined_ops.h:
-
 /usr/include/c++/13/backward/binders.h:
+
+/usr/include/c++/13/bits/locale_facets.tcc:
+
+/usr/include/c++/13/bits/requires_hosted.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/c++/13/string:
+
+/usr/include/asio/detail/reactive_socket_recvfrom_op.hpp:
+
+/usr/include/features.h:
+
+/usr/include/c++/13/bits/align.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/asio/detail/operation.hpp:
 
 /usr/include/c++/13/bits/stl_algobase.h:
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/connection_base.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/usr/include/c++/13/bits/functexcept.h:
-
-/usr/include/x86_64-linux-gnu/bits/ioctls.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/asio/detail/resolver_service_base.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/c++/13/bits/nested_exception.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/asio/is_write_buffered.hpp:
-
-/usr/include/asio/associated_allocator.hpp:
-
-/usr/include/asio/signal_set_base.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/asio/execution/bulk_execute.hpp:
-
-/usr/include/asio/detail/io_control.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/features-time64.h:
-
-/usr/include/c++/13/type_traits:
-
-/usr/include/asio/bind_executor.hpp:
 
 /usr/include/c++/13/iterator:
 
@@ -2311,27 +2457,157 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/asio/detail/impl/posix_event.ipp:
 
-/usr/include/c++/13/bits/ios_base.h:
+/usr/include/asio/bind_executor.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
+/usr/include/jsoncpp/json/json_features.h:
 
-/usr/include/c++/13/array:
+/usr/include/asio/basic_socket_acceptor.hpp:
 
-/home/lukams/CodingProjects/Traffic/TrafficLib/include/Road/Road.h:
+/usr/include/asm-generic/types.h:
 
-/usr/include/x86_64-linux-gnu/bits/endian.h:
+/usr/include/c++/13/tr1/legendre_function.tcc:
 
-/usr/include/asio/detail/handler_alloc_helpers.hpp:
+/home/lukams/CodingProjects/Traffic/TrafficLib/src/Road.cpp:
 
-/usr/include/c++/13/bits/deque.tcc:
+/usr/include/asio/detail/reactor_op.hpp:
 
-/home/lukams/CodingProjects/Traffic/TrafficLib/src/Light.cpp:
+/usr/include/c++/13/tr1/poly_hermite.tcc:
 
-/usr/include/asio/detail/string_view.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
-/usr/include/asio/impl/buffered_write_stream.hpp:
+/usr/include/stdlib.h:
 
-/home/lukams/CodingProjects/Traffic/TrafficLib/include/Map/Map.h:
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/http/request.hpp:
+
+/usr/include/asio/impl/detached.hpp:
+
+/usr/include/asio/detail/impl/epoll_reactor.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
+
+/home/lukams/CodingProjects/Traffic/TrafficLib/include/Server/Server.h:
+
+/usr/include/asio/detail/bind_handler.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/c++/13/bits/atomic_base.h:
+
+/usr/include/c++/13/bits/uses_allocator_args.h:
+
+/usr/include/c++/13/bits/basic_string.h:
+
+/usr/include/asio/detail/is_buffer_sequence.hpp:
+
+/usr/include/c++/13/tr1/special_function_util.h:
+
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/asio/ip/address_v4_iterator.hpp:
+
+/usr/include/c++/13/debug/assertions.h:
+
+/usr/include/asio/connect.hpp:
+
+/usr/include/c++/13/bits/localefwd.h:
+
+/usr/include/asm-generic/ioctls.h:
+
+/usr/include/asio/is_executor.hpp:
+
+/usr/include/asio/basic_writable_pipe.hpp:
+
+/usr/include/linux/falloc.h:
+
+/usr/include/asio/execution/receiver.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/asio/detail/base_from_completion_cond.hpp:
+
+/usr/include/asio/execution/set_value.hpp:
+
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/platforms.hpp:
+
+/usr/include/asio/detail/conditionally_enabled_mutex.hpp:
+
+/usr/include/asio/detail/deadline_timer_service.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/include/asio/detail/is_executor.hpp:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/asio/detail/impl/strand_executor_service.ipp:
+
+/usr/include/c++/13/bits/exception.h:
+
+/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
+
+/usr/include/asio/generic/stream_protocol.hpp:
+
+/usr/include/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/c++/13/bits/hash_bytes.h:
+
+/usr/include/poll.h:
+
+/usr/include/asio/impl/read_at.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/asio/detail/posix_thread.hpp:
+
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/message_buffer/alloc.hpp:
+
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/usr/include/asio/bind_allocator.hpp:
+
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/http/constants.hpp:
+
+/usr/include/c++/13/bits/uses_allocator.h:
+
+/usr/include/c++/13/tr1/beta_function.tcc:
+
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/impl/connection_impl.hpp:
+
+/usr/include/linux/errno.h:
+
+/usr/include/c++/13/bits/std_abs.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/x86_64-linux-gnu/asm/ioctl.h:
+
+/usr/include/asio/traits/set_done_free.hpp:
+
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/transport/asio/base.hpp:
+
+/usr/include/c++/13/bits/cpp_type_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/asio/basic_readable_pipe.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/c++/13/bits/basic_ios.h:
 
 /usr/include/c++/13/ext/type_traits.h:
 
@@ -2339,35 +2615,15 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/include/c++/13/bits/basic_ios.h:
+/usr/include/asio/ip/tcp.hpp:
 
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/md5.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
-/usr/include/asio/io_context_strand.hpp:
+/usr/include/c++/13/type_traits:
 
-/usr/include/asio/impl/thread_pool.hpp:
+/usr/include/features-time64.h:
 
-/usr/include/asio/detail/eventfd_select_interrupter.hpp:
-
-/usr/include/asio/detail/initiate_post.hpp:
-
-/usr/include/alloca.h:
-
-/usr/include/asio/multiple_exceptions.hpp:
-
-/usr/include/c++/13/bit:
-
-/usr/include/asio/impl/execution_context.hpp:
-
-/usr/include/asio/detail/reactor.hpp:
-
-/usr/include/c++/13/backward/auto_ptr.h:
-
-/usr/include/asio/basic_datagram_socket.hpp:
-
-/usr/include/asio/traits/require_free.hpp:
-
-/usr/include/asio/detail/signal_set_service.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/fcntl.h:
 
@@ -2383,227 +2639,153 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/asio/detail/strand_service.hpp:
 
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/roles/server_endpoint.hpp:
+/usr/include/x86_64-linux-gnu/bits/ioctls.h:
 
-/usr/include/c++/13/pstl/execution_defs.h:
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
-/usr/include/c++/13/bits/basic_ios.tcc:
+/usr/include/asio/detail/resolver_service_base.hpp:
 
-/usr/include/asio/detail/buffered_stream_storage.hpp:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/c++/13/bits/range_access.h:
+/usr/include/asio/basic_deadline_timer.hpp:
 
-/usr/include/asio/any_completion_executor.hpp:
+/usr/include/c++/13/bits/deque.tcc:
 
-/usr/include/c++/13/bits/cxxabi_forced.h:
+/usr/include/asio/impl/buffered_write_stream.hpp:
 
-/usr/include/c++/13/bits/istream.tcc:
+/home/lukams/CodingProjects/Traffic/TrafficLib/include/Map/Map.h:
 
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/connection.hpp:
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
-/usr/include/x86_64-linux-gnu/bits/stat.h:
+/home/lukams/CodingProjects/Traffic/TrafficLib/src/Light.cpp:
 
-/usr/include/c++/13/bits/this_thread_sleep.h:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+/usr/include/x86_64-linux-gnu/bits/endian.h:
 
-/usr/include/c++/13/bits/exception_ptr.h:
+/usr/include/asio/detail/handler_alloc_helpers.hpp:
 
-/usr/include/c++/13/bits/locale_facets.h:
+/usr/include/asio/detail/string_view.hpp:
 
-/usr/include/c++/13/bits/locale_facets.tcc:
+/usr/include/asm-generic/socket.h:
 
-/usr/include/x86_64-linux-gnu/asm/ioctl.h:
+/usr/include/asio/consign.hpp:
 
-/usr/include/asio/traits/set_done_free.hpp:
+/usr/include/x86_64-linux-gnu/sys/types.h:
 
-/usr/include/c++/13/bits/cpp_type_traits.h:
+/usr/include/asio/basic_waitable_timer.hpp:
 
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/transport/asio/base.hpp:
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/transport/iostream/connection.hpp:
 
-/usr/include/asio/generic/seq_packet_protocol.hpp:
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/server.hpp:
 
-/usr/include/c++/13/bits/allocator.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
-/usr/include/asio/detail/wait_op.hpp:
+/usr/include/asm-generic/bitsperlong.h:
 
-/usr/include/c++/13/system_error:
+/usr/include/asio/is_write_buffered.hpp:
 
-/usr/include/c++/13/bits/ostream_insert.h:
-
-/home/lukams/CodingProjects/Traffic/TrafficLib/include/Light/Light.h:
-
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/system_error.hpp:
-
-/usr/include/c++/13/bits/basic_string.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/c++/13/bits/refwrap.h:
-
-/usr/include/asio/ip/basic_resolver.hpp:
-
-/usr/include/asio/detail/array_fwd.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/eventfd.h:
-
-/usr/include/asio/ip/impl/address_v4.ipp:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/asio/detail/keyword_tss_ptr.hpp:
-
-/usr/include/asio/execution/context_as.hpp:
-
-/usr/include/c++/13/bits/shared_ptr.h:
-
-/usr/include/asio/detail/cstddef.hpp:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/c++/13/bits/erase_if.h:
-
-/usr/include/c++/13/bits/shared_ptr_atomic.h:
-
-/usr/include/asio/detail/impl/strand_service.ipp:
-
-/usr/include/c++/13/cwctype:
-
-/usr/include/c++/13/bits/sstream.tcc:
-
-/usr/include/asio/buffered_read_stream.hpp:
-
-/usr/include/c++/13/bits/uses_allocator.h:
-
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/impl/connection_impl.hpp:
+/usr/include/asio/associated_allocator.hpp:
 
 /usr/include/x86_64-linux-gnu/asm/socket.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
+/usr/include/asio/detail/consuming_buffers.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
-/usr/include/asio/detail/consuming_buffers.hpp:
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/usr/include/linux/errno.h:
+/usr/include/asio/execution/relationship.hpp:
 
-/usr/include/c++/13/bits/std_abs.h:
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
-/usr/include/asio/execution/set_done.hpp:
+/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
-/usr/include/c++/13/bits/stl_bvector.h:
+/usr/include/signal.h:
 
-/usr/include/poll.h:
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
-/usr/include/asio/impl/read_at.hpp:
+/usr/include/c++/13/tr1/hypergeometric.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/thread.hpp:
 
-/usr/include/asio/detail/posix_thread.hpp:
+/usr/include/asio/detail/impl/service_registry.hpp:
 
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/message_buffer/alloc.hpp:
+/usr/include/c++/13/bits/ostream.tcc:
 
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
-/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
 
-/usr/include/asio/execution/any_executor.hpp:
+/usr/include/x86_64-linux-gnu/bits/sched.h:
 
-/usr/include/asio/traits/set_error_free.hpp:
+/usr/include/asio/detail/initiate_defer.hpp:
 
-/usr/include/c++/13/bits/stl_tempbuf.h:
+/usr/include/c++/13/bits/predefined_ops.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
-/usr/include/asio/traits/prefer_free.hpp:
+/usr/include/c++/13/bits/erase_if.h:
 
-/usr/include/asio/detail/thread.hpp:
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/include/c++/13/bits/stl_vector.h:
+/usr/include/asio/detail/cstddef.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/roles/server_endpoint.hpp:
 
-/usr/include/c++/13/locale:
+/usr/include/asio/signal_set_base.hpp:
 
-/usr/include/c++/13/bits/stl_map.h:
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
-/usr/include/asio/detail/recycling_allocator.hpp:
+/usr/include/asio/execution/bulk_execute.hpp:
 
-/usr/include/c++/13/bits/streambuf.tcc:
+/usr/include/asio/detail/io_control.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
 
-/usr/include/asio/detail/operation.hpp:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
-/usr/include/c++/13/bits/align.h:
+/usr/include/asio/traits/static_require_concept.hpp:
 
-/home/lukams/CodingProjects/Traffic/TrafficLib/include/Car/Car.h:
+/usr/include/asio/detail/impl/thread_context.ipp:
 
-/usr/include/c++/13/bits/unique_ptr.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
-/usr/include/linux/falloc.h:
+/usr/include/c++/13/bits/uniform_int_dist.h:
 
-/usr/include/asio/execution/receiver.hpp:
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/asio.hpp:
 
-/usr/include/asio/detail/base_from_completion_cond.hpp:
+/usr/include/asio/packaged_task.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+/usr/include/asio/ip/multicast.hpp:
 
-/usr/include/asio/ip/address_v6_range.hpp:
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/chrono.hpp:
 
-/usr/include/c++/13/bits/vector.tcc:
+/usr/include/asio/detail/utility.hpp:
 
-/usr/include/c++/13/cctype:
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/connection_hdl.hpp:
 
-/usr/include/asio/basic_stream_socket.hpp:
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/md5.hpp:
 
-/usr/include/asio/detail/winsock_init.hpp:
+/usr/include/asio/io_context_strand.hpp:
 
-/usr/include/asio/streambuf.hpp:
+/usr/include/asio/impl/thread_pool.hpp:
 
-/usr/include/asio/stream_file.hpp:
+/usr/include/asio/detail/eventfd_select_interrupter.hpp:
 
-/usr/include/asio/execution/sender.hpp:
+/usr/include/asio/detail/initiate_post.hpp:
 
-/usr/include/c++/13/cstdint:
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/utf8_validator.hpp:
 
-/usr/include/asio/impl/executor.hpp:
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/memory.hpp:
 
-/usr/include/asio/any_io_executor.hpp:
+/usr/include/asio/impl/read_until.hpp:
 
-/usr/include/c++/13/initializer_list:
+/usr/include/asio/impl/error_code.ipp:
 
-/usr/include/c++/13/bits/stl_stack.h:
+/usr/include/asio/coroutine.hpp:
 
-/usr/include/asio/detail/impl/strand_executor_service.hpp:
-
-/usr/include/asio/detail/socket_holder.hpp:
-
-/usr/include/asio/detail/select_interrupter.hpp:
-
-/usr/include/c++/13/bits/stringfwd.h:
-
-/usr/include/c++/13/cerrno:
-
-/usr/include/asio/buffered_read_stream_fwd.hpp:
-
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/processors/hybi07.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/asio/detail/chrono.hpp:
-
-/usr/include/asio/detail/reactive_socket_accept_op.hpp:
-
-/usr/include/c++/13/tuple:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/asio/local/basic_endpoint.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/c++/13/cstdio:
+/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/network.hpp:
 
 /usr/include/linux/posix_types.h:
 
@@ -2611,27 +2793,13 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/type_traits.hpp:
 
-/usr/include/asio/detail/timer_queue_set.hpp:
-
-/usr/include/asio/detail/wrapped_handler.hpp:
-
 /usr/include/asio/basic_socket_streambuf.hpp:
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/error.hpp:
 
-/usr/include/c++/13/bits/locale_classes.h:
-
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/extensions/extension.hpp:
-
 /usr/include/c++/13/stack:
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/extensions/permessage_deflate/disabled.hpp:
-
-/usr/include/asio/bind_allocator.hpp:
-
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/http/constants.hpp:
-
-/usr/include/asio/detail/variadic_templates.hpp:
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/http/impl/parser.hpp:
 
@@ -2644,6 +2812,8 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/http/impl/response.hpp:
 
 /usr/include/asio/execution/executor.hpp:
+
+/usr/include/c++/13/tr1/modified_bessel_func.tcc:
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/http/parser.hpp:
 
@@ -2669,8 +2839,6 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/message_buffer/message.hpp:
 
-/usr/include/asio/detail/thread_group.hpp:
-
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/processors/processor.hpp:
 
 /usr/include/limits.h:
@@ -2689,9 +2857,9 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/asio/ip/impl/basic_endpoint.hpp:
 
-/usr/include/c++/13/pstl/pstl_config.h:
-
 /usr/include/asio/detail/service_registry.hpp:
+
+/usr/include/c++/13/pstl/pstl_config.h:
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/transport/base/endpoint.hpp:
 
@@ -2712,10 +2880,6 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 /usr/include/asio/detail/op_queue.hpp:
 
 /home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/transport/iostream/endpoint.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-/usr/include/asio/dispatch.hpp:
 
 /usr/include/c++/13/bits/allocated_ptr.h:
 
@@ -2819,8 +2983,6 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/asio/detail/assert.hpp:
 
-/usr/include/asio/buffered_stream_fwd.hpp:
-
 /usr/include/asio/traits/schedule_free.hpp:
 
 /usr/include/asio/impl/thread_pool.ipp:
@@ -2837,6 +2999,10 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/asio/buffers_iterator.hpp:
 
+/usr/include/asio/detail/wait_handler.hpp:
+
+/usr/include/asio/detail/impl/posix_serial_port_service.ipp:
+
 /usr/include/asio/placeholders.hpp:
 
 /usr/include/asio/impl/executor.ipp:
@@ -2846,6 +3012,10 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 /usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
 /usr/include/asio/cancellation_state.hpp:
+
+/usr/include/asio/detail/timer_scheduler_fwd.hpp:
+
+/usr/include/asio/co_spawn.hpp:
 
 /usr/include/asio/deadline_timer.hpp:
 
@@ -2899,14 +3069,6 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/asio/detail/concurrency_hint.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
-
-/usr/include/asio/impl/write.hpp:
-
-/usr/include/asio/detail/posix_mutex.hpp:
-
-/usr/include/asio/detail/config.hpp:
-
 /usr/include/asio/detail/date_time_fwd.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
@@ -2937,9 +3099,9 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/asio/ip/icmp.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
-
 /usr/include/c++/13/bits/charconv.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
 
 /usr/include/asio/detail/fenced_block.hpp:
 
@@ -2981,10 +3143,6 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/asio/detail/impl/socket_ops.ipp:
 
-/usr/include/asio/impl/prepend.hpp:
-
-/usr/include/asio/detail/work_dispatcher.hpp:
-
 /usr/include/asio/detail/impl/eventfd_select_interrupter.ipp:
 
 /usr/include/asio/detail/impl/handler_tracking.ipp:
@@ -2998,12 +3156,6 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/asio/detail/impl/posix_thread.ipp:
-
-/usr/include/asio/ip/bad_address_cast.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/include/asio/detail/timer_queue_base.hpp:
 
 /usr/include/asio/detail/impl/reactive_descriptor_service.ipp:
 
@@ -3019,10 +3171,6 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/asio/detail/impl/service_registry.ipp:
 
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/logger/basic.hpp:
-
-/usr/include/asio/execution.hpp:
-
 /usr/include/asio/detail/impl/signal_set_service.ipp:
 
 /usr/include/asio/detail/impl/timer_queue_set.ipp:
@@ -3030,8 +3178,6 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 /usr/include/asio/detail/initiate_dispatch.hpp:
 
 /usr/include/asio/detail/io_object_impl.hpp:
-
-/usr/include/asio/detail/is_executor.hpp:
 
 /usr/include/asio/detail/limits.hpp:
 
@@ -3093,6 +3239,8 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/asio/detail/reactive_socket_recv_op.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
 /usr/include/asio/detail/reactive_socket_recvmsg_op.hpp:
 
 /usr/include/c++/13/functional:
@@ -3143,48 +3291,12 @@ TrafficLib/CMakeFiles/TrafficLib.dir/src/Server.cpp.o: /home/lukams/CodingProjec
 
 /usr/include/asio/detail/socket_types.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
-
 /usr/include/c++/13/cstring:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
 
 /usr/include/asio/detail/static_mutex.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
 /usr/include/asio/detail/std_fenced_block.hpp:
-
-/usr/include/asio/detail/thread_info_base.hpp:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/asio/detail/throw_error.hpp:
-
-/usr/include/netdb.h:
-
-/usr/include/asio/posix/basic_descriptor.hpp:
-
-/usr/include/sched.h:
-
-/usr/include/asio/detail/timer_queue_ptime.hpp:
-
-/usr/include/asio/read.hpp:
-
-/usr/include/asio/detail/timer_scheduler.hpp:
-
-/usr/include/asio/co_spawn.hpp:
-
-/usr/include/asio/detail/timer_scheduler_fwd.hpp:
-
-/usr/include/asio/detail/type_traits.hpp:
-
-/home/lukams/CodingProjects/Traffic/third_party/websocketpp/websocketpp/common/connection_hdl.hpp:
-
-/usr/include/asio/detail/utility.hpp:
-
-/usr/include/asio/detail/impl/posix_serial_port_service.ipp:
-
-/usr/include/asio/detail/wait_handler.hpp:
-
-/usr/include/c++/13/algorithm:
-
-/usr/include/asio/error_code.hpp:
